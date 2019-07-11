@@ -1,0 +1,25 @@
+.header-style{
+   background-color:  #4CAF50 !important;
+   color: white !important;
+   border-radius: 0px !important;
+   border: 1px solid #4CAF50;
+}
+.btn-styled-menu{
+    border-radius: 0px !important;
+    font-size: 13px;
+    border: 1px solid #6c757d;
+}
+@media screen and (max-width: 500px) {
+    .btn-styled-menu{
+        border-radius: 0px !important;
+        font-size: 10px;
+        border: 1px solid #6c757d;
+    }
+}
+.btn-styled-menu:active{
+    background-color:  rgb(216, 121, 58) !important;
+    border: 1px solid rgb(216, 121, 58);
+}
+.card{
+    border-radius: 0px !important;
+}
