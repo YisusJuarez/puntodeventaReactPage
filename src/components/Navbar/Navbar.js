@@ -5,7 +5,7 @@ import logo from "./SiVAwhite.png";
 class Navbar extends React.Component {
   render() {
     return (
-      <div className="navbar">
+      <div className="navbar shadow">
         <img className="logo" alt="img" src={logo}/>
       </div>
     );

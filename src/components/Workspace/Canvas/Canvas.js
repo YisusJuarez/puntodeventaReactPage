@@ -5,8 +5,9 @@ class Canvas extends React.Component {
   
   render() {
     return (
-      <div className="card">
+      <div className="card shadow">
         <div className="card-header header-style">BIENVENIDO</div>
+        <div className="card-footer">Usuario:</div>
         <div className="btn-group" role="group" aria-label="Basic example">
           <button type="button" className="btn btn-secondary btn-styled-menu">
             MOVIMIENTOS
