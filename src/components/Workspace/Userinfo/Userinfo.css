@@ -2,5 +2,11 @@
 padding-top: 20px;
 }
 .list-title{
-    background-color: ghostwhite;
+    background-color: #E5E8E8;
+    border: 2px solid #E5E8E8;
+    text-align: center;
+    
+}
+.space{
+    margin-bottom: 10px;
 }

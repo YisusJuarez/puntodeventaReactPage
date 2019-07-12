@@ -1,5 +1,5 @@
 import React from "react";
-import Tags from "./Tags/Tags";
+import Cuentas from "./Cuentas/Cuentas";
 import "./Userinfo.css"
 class Userinfo extends React.Component {
     state = {
@@ -9,14 +9,10 @@ class Userinfo extends React.Component {
     return (
       <div className="row">
         <div className="col-md-12">
-          <ul className="list-group shadow">
-            <li className="list-group-item list-title">Tags</li>
-            <Tags></Tags>
-          </ul>
-        </div>
-        <div className="col-md-12 bars-space">
-          <ul className="list-group shadow">
+          <ul className="list-group shadow space">
             <li className="list-group-item list-title">Cuentas</li>
+            <Cuentas  tag="1234567" noTags="2"></Cuentas>
+            <Cuentas  tag="7894561" noTags="4"></Cuentas>
           </ul>
         </div>
       </div>
