@@ -13,7 +13,7 @@ class Tags extends React.Component {
     return (
       <ul className="list-group">
         <li
-          className="list-group-item "
+          className="list-group-item list-interactive "
           onClick={() => this.setState({ open: !open })}
           aria-expanded={open}
         >
@@ -24,11 +24,11 @@ class Tags extends React.Component {
         </li>
         <Collapse in={this.state.open}>
           <ul className="list-group">
-            <li className="list-group-item">
-              <i class="material-icons icon-medida">subdirectory_arrow_right</i>53643514
+            <li className="list-group-item list-interactive">
+              <i className="material-icons icon-medida">subdirectory_arrow_right</i>53643514
             </li>
-            <li className="list-group-item">
-              <i class="material-icons icon-medida">subdirectory_arrow_right</i>53643514
+            <li className="list-group-item list-interactive">
+              <i className="material-icons icon-medida">subdirectory_arrow_right</i>53643514
             </li>
           </ul>
         </Collapse>

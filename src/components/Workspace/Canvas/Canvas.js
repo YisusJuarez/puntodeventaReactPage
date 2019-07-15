@@ -1,26 +1,42 @@
 import React from "react";
 import "./Canvas.css";
+import CanvasDom from "./CanvasDom/CanvasDom";
 
 class Canvas extends React.Component {
-  
-  render() {
+  state = {
+    select: 0
+  };
+
+  render() {    
     return (
       <div className="card shadow">
         <div className="card-header header-style">BIENVENIDO</div>
         <div className="card-footer">Usuario:</div>
         <div className="btn-group" role="group" aria-label="Basic example">
-          <button type="button" className="btn btn-secondary btn-styled-menu">
+          <button
+            type="button"
+            onClick={() =>  this.setState({ select: 0 })}
+            className="btn btn-secondary btn-styled-menu"
+          >
             MOVIMIENTOS
           </button>
-          <button type="button" className="btn btn-secondary btn-styled-menu">
+          <button
+            type="button"
+            onClick={() => this.setState({ select: 1 })}
+            className="btn btn-secondary btn-styled-menu"
+          >
             ACLARACIONES
           </button>
-          <button type="button" className="btn btn-secondary btn-styled-menu">
+          <button
+            type="button"
+            onClick={() => this.setState({ select: 2 })}
+            className="btn btn-secondary btn-styled-menu"
+          >
             RECARGAS
           </button>
         </div>
-        <div className = "card-body card-body-style">
-         
+        <div className="card-body card-body-style">
+        <CanvasDom seleccion = {this.state.select}></CanvasDom>
         </div>
       </div>
     );

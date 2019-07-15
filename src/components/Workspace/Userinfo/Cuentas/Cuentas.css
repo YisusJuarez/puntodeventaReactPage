@@ -6,3 +6,6 @@
     font-size: 15px;
     padding-right: 8px;
 } 
+.list-interactive:hover{
+cursor: pointer;
+}
