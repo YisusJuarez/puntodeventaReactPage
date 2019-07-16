@@ -9,6 +9,7 @@
     border-radius: 0px !important;
     font-size: 15px;
     border: 1px solid #6c757d;
+    
 }
 @media screen and (max-width: 500px) {
     .btn-styled-menu{
@@ -23,4 +24,8 @@
 }
 .card{
     border-radius: 0px !important;
+}
+.active{
+    background-color:  rgb(216, 121, 58) !important;
+    border: 1px solid rgb(216, 121, 58) !important;
 }
