@@ -18,19 +18,19 @@ class Canvas extends React.Component {
         <Router>
           <div className="btn-group" role="group" aria-label="Basic example">
             <NavLink className="btn btn-secondary btn-styled-menu" exact to="/">
-              Movimientos
+              MOVIMIENTOS
             </NavLink>
             <NavLink
               className="btn btn-secondary btn-styled-menu"
               to="/Aclaraciones"
             >
-              Aclaraciones
+              ACLARACIONES
             </NavLink>
             <NavLink
               className="btn btn-secondary btn-styled-menu"
               to="/Recargas"
             >
-              Recargas
+              RECARGAS
             </NavLink>
           </div>
           <div className="card-body card-body-style">
