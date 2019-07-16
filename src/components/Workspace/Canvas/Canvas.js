@@ -34,9 +34,9 @@ class Canvas extends React.Component {
             </NavLink>
           </div>
           <div className="card-body card-body-style">
-            <Route exact path="/" component={Movimientos} />
-            <Route exact path="/Aclaraciones" component={Aclaraciones} />
-            <Route exact path="/Recargas" component={Recargas} />
+            <Route exact path="/" render={(props) => <Movimientos></Movimientos>} />
+            <Route exact path="/Aclaraciones" render={(props) => <Aclaraciones></Aclaraciones>} />
+            <Route exact path="/Recargas" render={(props) => <Recargas></Recargas>} />
           </div>
         </Router>
       </div>
