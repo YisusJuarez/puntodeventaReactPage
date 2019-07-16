@@ -1,8 +1,8 @@
 import React from "react";
 import "./Canvas.css";
-import Movimientos from "./CanvasDom/Movimientos/Movimientos";
-import Recargas from "./CanvasDom/Recargas/Recargas";
-import Aclaraciones from "./CanvasDom/Aclaraciones/Aclaraciones";
+import Movimientos from "./Movimientos/Movimientos";
+import Recargas from "./Recargas/Recargas";
+import Aclaraciones from "./Aclaraciones/Aclaraciones";
 import { BrowserRouter as Router, Route, NavLink } from "react-router-dom";
 
 class Canvas extends React.Component {
