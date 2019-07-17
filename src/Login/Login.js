@@ -1,13 +1,11 @@
 import React from "react";
-import Nav from "./components/Navbar/Navbar";
 import { BrowserRouter as Router, Route, NavLink } from "react-router-dom";
 import "./Login.css";
-import App from "./App";
+import App from "../App";
 class Login extends React.Component {
   render() {
     return (
       <div>
-        <Nav />
         <div className="container-fluid">
           <div className="row no-gutter">
             <div className="d-none d-md-flex col-md-4 col-lg-6 bg-image" />
