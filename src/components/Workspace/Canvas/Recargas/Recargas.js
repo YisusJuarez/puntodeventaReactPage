@@ -1,17 +1,16 @@
 import React from "react";
-import Button from 'react-bootstrap/Button';
+
 import Jumbotron from 'react-bootstrap/Jumbotron'
 class Recargas extends React.Component {
   render() {
     return (
         <Jumbotron>
-        <h1>Hello, world!</h1>
+        <h1>Información</h1>
         <p>
-          This is a simple hero unit, a simple jumbotron-style component for calling
-          extra attention to featured content or information.
+        Te redireccionaremos al portal de recarga del Banco Industrial
         </p>
         <p>
-          <Button variant="primary">Learn more</Button>
+          <a href="https://www.corporacionbi.com/gt/bancoindustrial/inicio" className="btn btn-primary">Enlace a Recargas</a>
         </p>
       </Jumbotron>
     );
