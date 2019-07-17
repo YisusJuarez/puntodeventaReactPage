@@ -1,8 +1,8 @@
 import React from "react";
-import { BrowserRouter as Router, Route, NavLink } from "react-router-dom";
 import "./Login.css";
-import App from "../App";
+
 class Login extends React.Component {
+ 
   render() {
     return (
       <div>
@@ -50,16 +50,7 @@ class Login extends React.Component {
                               Recordar contraseña
                             </label>
                           </div>
-                          <Router>
-                            <NavLink
-                              className="btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2 botoninicio-verde"
-                              exact
-                              to="/inicio"
-                            >
-                              Iniciar
-                            </NavLink>
-                            
-                          </Router>
+                          <button type="button" class="btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2 botoninicio-verde">Iniciar</button>
                           <div className="text-center">
                             <a className="small" href="#">
                               ¿Olvidaste a contraseña?
