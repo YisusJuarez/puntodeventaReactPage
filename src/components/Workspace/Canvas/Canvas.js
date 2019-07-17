@@ -4,6 +4,7 @@ import Movimientos from "./Movimientos/Movimientos";
 import Recargas from "./Recargas/Recargas";
 import Aclaraciones from "./Aclaraciones/Aclaraciones";
 import { BrowserRouter as Router, Route, NavLink } from "react-router-dom";
+import { connect } from "react-redux";
 
 class Canvas extends React.Component {
   state = {
@@ -13,6 +14,7 @@ class Canvas extends React.Component {
   render() {
     return (
       <div className="card shadow">
+        <div className="card-header"><span>Cuenta o Tag: {this.props.seleccionado}</span></div>
         <Router>
           <div className="btn-group" role="group" aria-label="Basic example">
             <NavLink className="btn btn-secondary btn-styled-menu" exact to="/">
@@ -32,16 +34,26 @@ class Canvas extends React.Component {
             </NavLink>
           </div>
           <div className="card-body card-body-style">
-            <Route exact path="/" render={(props) => <Movimientos></Movimientos>} />
-            <Route exact path="/Aclaraciones" render={(props) => <Aclaraciones></Aclaraciones>} />
-            <Route exact path="/Recargas" render={(props) => <Recargas></Recargas>} />
+            <Route exact path="/" render={props => <Movimientos />} />
+            <Route
+              exact
+              path="/Aclaraciones"
+              render={props => <Aclaraciones />}
+            />
+            <Route exact path="/Recargas" render={props => <Recargas />} />
           </div>
         </Router>
       </div>
     );
   }
 }
-export default Canvas;
+
+const mapStateToProps = state => ({
+  seleccionado: state.seleccionado
+});
+export default connect(
+  mapStateToProps,{}
+)(Canvas);
 
 /* 
 import CanvasDom from "./CanvasDom/CanvasDom";

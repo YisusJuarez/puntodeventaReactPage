@@ -5,7 +5,7 @@ import Userinfo from "./Userinfo/Userinfo";
 import "./Workspace.css";
 class Workspace extends React.Component {
     state = {
-        
+        tags:["tag1","tag2","tag3"],
       };
   render() {
     return (

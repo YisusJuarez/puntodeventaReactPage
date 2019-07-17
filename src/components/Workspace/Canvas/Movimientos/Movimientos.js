@@ -28,6 +28,7 @@ class Movimientos extends React.Component {
           <tr>
             <td>Cruce</td>
             <td>Palín-Escuintla</td>
+            
             <td>10/04/2019</td>
             <td>-$100.00</td>
             <td>$140.00</td>

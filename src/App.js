@@ -2,13 +2,16 @@ import React from "react";
 import Navbar from "./components/Navbar/Navbar";
 import Workspace from "./components/Workspace/Workspace";
 import "./App.css";
-
+import { Provider } from "react-redux";
+import Tienda from "./store";
 function App() {
   return (
-    <div className="App">
-      <Navbar></Navbar>
-      <Workspace></Workspace>
-    </div>
+    <Provider store = {Tienda}>
+      <div className="App">
+        <Navbar />
+        <Workspace />
+      </div>
+    </Provider>
   );
 }
 
