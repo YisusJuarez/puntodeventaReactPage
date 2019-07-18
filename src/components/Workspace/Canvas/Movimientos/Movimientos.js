@@ -4,18 +4,10 @@ import "./Movimientos.css"
 class Movimientos extends React.Component {
   render() {
     return (
+      
       <div>
           <span className="saldo">Saldo actual: $30.00</span>
           <Table className="space-table" bordered striped responsive>
-        <thead>
-          <tr>
-            <th>Movimiento</th>
-            <th>Caseta/Tramo</th>
-            <th>Fecha</th>
-            <th>Monto</th>
-            <th>Saldo</th>
-          </tr>
-        </thead>
         <tbody>
           <tr>
             <td>Cruce</td>

@@ -7,7 +7,6 @@ const initialState = {
 };
 
 const reducer = (state = initialState, action) => {
-    console.log(action)
     if(action.type === "Agregando_Seleccion"){
         return{
             seleccionado: action.select

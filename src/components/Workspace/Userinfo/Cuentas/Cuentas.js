@@ -4,7 +4,7 @@ import Collapse from "react-bootstrap/Collapse";
 import Badge from "react-bootstrap/Badge";
 import { connect } from "react-redux";
 
-export class Tags extends React.Component {
+ class Tags extends React.Component {
   state = {
     open: false
   };
@@ -25,6 +25,10 @@ export class Tags extends React.Component {
           <Badge className="badge" variant="secondary">
             {this.props.noTags + " Tags"}
           </Badge>
+          <Badge className="badge" variant="primary">
+            {this.props.type}
+          </Badge>
+        
         </li>
         <Collapse in={this.state.open}>
           <ul className="list-group">

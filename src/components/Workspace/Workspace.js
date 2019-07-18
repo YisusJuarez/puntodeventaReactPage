@@ -1,7 +1,6 @@
 import React from "react";
 import Canvas from "./Canvas/Canvas";
 import Userinfo from "./Userinfo/Userinfo";
-
 import "./Workspace.css";
 class Workspace extends React.Component {
     state = {
@@ -13,11 +12,11 @@ class Workspace extends React.Component {
         <div className="row">
           <div className="col-xl-12">
             <div className="row">
-              <div className="col-xl-2">
+              <div className="col-xl-3">
                 <Userinfo />
               </div>
-              <div className="col-xl-10">
-                <Canvas />
+              <div className="col-xl-9">
+                <Canvas/>
               </div>
             </div>
           </div>

@@ -7,17 +7,18 @@ import { BrowserRouter as Router, Route, NavLink } from "react-router-dom";
 import { connect } from "react-redux";
 
 class Canvas extends React.Component {
-  state = {
-    select: 0
-  };
-
   render() {
     return (
-      <div className="card shadow">
-        <div className="card-header"><span>Cuenta o Tag: {this.props.seleccionado}</span></div>
+      <div className="card shadow space-card">
+        <div className="card-header">
+          <span>Cuenta o Tag: {this.props.seleccionado}</span>
+        </div>
         <Router>
           <div className="btn-group" role="group" aria-label="Basic example">
-            <NavLink className="btn btn-secondary btn-styled-menu" exact to="/">
+            <NavLink
+              className="btn btn-secondary btn-styled-menu"
+              to="/Movimientos"
+            >
               MOVIMIENTOS
             </NavLink>
             <NavLink
@@ -34,7 +35,11 @@ class Canvas extends React.Component {
             </NavLink>
           </div>
           <div className="card-body card-body-style">
-            <Route exact path="/" render={props => <Movimientos />} />
+            <Route
+              exact
+              path="/Movimientos"
+              render={props => <Movimientos />}
+            />
             <Route
               exact
               path="/Aclaraciones"
@@ -52,7 +57,8 @@ const mapStateToProps = state => ({
   seleccionado: state.seleccionado
 });
 export default connect(
-  mapStateToProps,{}
+  mapStateToProps,
+  {}
 )(Canvas);
 
 /* 
